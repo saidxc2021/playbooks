@@ -1,0 +1,11 @@
+---
+- name: first play
+  hosts: all
+  tasks:
+     -name: get memory details 
+      shell: free -m
+      register: output
+    - name: print details
+      debug:
+         msg: "{{ memory details {{ output.stdout }} "
+         
