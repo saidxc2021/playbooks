@@ -7,5 +7,5 @@
       register: output
     - name: print details
       debug:
-         msg: "{{ memory details {{ output.stdout }} "
+         msg: "memory details {{ output.stdout }} "
          
